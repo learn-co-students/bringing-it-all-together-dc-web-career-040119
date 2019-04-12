@@ -144,7 +144,9 @@ describe "Dog" do
       teddy.save
       teddy.name = "Teddy Jr."
       teddy.update
+
       teddy_jr = Dog.find_by_name("Teddy Jr.")
+
       expect(teddy_jr.id).to eq(teddy.id)
     end
 
